@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    .container {
+        padding: 1.5rem;
+        padding-top: 1rem;
+        background-color: transparent;
+        width: Min(90%, 30rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .button {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: .5rem;
+            place-items: center;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+
+img {
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: black;
+    border: .2rem solid white;
+    color: white;
+    width: 85%;
+    aspect-ratio: 2/1.5;
+    padding: .6rem;
+    transition: all 50ms ease-in;
+
+    &.yes:active {
+        background-color: white;
+        border: .2rem solid black;
+        color: black
+    }
+
+    &.hidden {
+        visibility: hidden;
+        transition: none;
+
+    }
+}
+
